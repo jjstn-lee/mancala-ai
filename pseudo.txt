@@ -1,0 +1,31 @@
+States: States are represented by a 2x6
+
+Actions: Move pile of marbles in one pile.
+
+Transition Model:
+    --> Actions(): scooping up a pile at 'n' index
+    --> Results(): pile at 'n' becomes empty, every pile from 'n+1' to 'n+1+# of marbles
+                   in pile'
+
+Cost: N/A
+
+Initial State: Initial Board
+
+Goal States: Any 'S' where player has more marbles in respective trough than opponent.
+
+
+
+DRIVER CLASS (MAIN FILE):
+    - REPL 
+
+MANCALA (STATE) CLASS:
+    - FORMAL DEFINITION
+        - ACTION CAN BE LIST OF ACTIONS
+    - MINIMAX / H-MINIMAX + ALPHA-BETA-PRUNING
+    
+
+    - TUPLE CLASS:
+        -  int utility
+        -  Mancala move
+
+
